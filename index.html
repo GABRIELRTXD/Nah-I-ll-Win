@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>burning hell</title>
+</head>
+<body>
+    
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f9f9f9;
+          margin: 0;
+          padding: 20px;
+        }
+    
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 20px;
+          background-color: #fff;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    
+        th, td {
+          padding: 10px;
+          text-align: left;
+          border: 1px solid #ddd;
+        }
+    
+        th {
+          background-color: #4CAF50;
+          color: white;
+        }
+    
+        td {
+          background-color: #f9f9f9;
+        }
+    
+        tr:nth-child(even) td {
+          background-color: #f1f1f1;
+        }
+    
+        tr:hover td {
+          background-color: #e9e9e9;
+        }
+    
+        caption {
+          font-size: 1.2em;
+          font-weight: bold;
+          color: #333;
+          margin-bottom: 10px;
+        }
+
+
+
+
+        /* Estilo general del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* Título principal */
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+/* Subtítulos h3 */
+h3 {
+    font-size: 1.8rem;
+    color: #2980b9;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 8px;
+}
+
+/* Párrafos */
+p {
+    font-size: 1.15rem;
+    color: #555;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover en párrafos */
+p:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección */
+section {
+    margin-bottom: 30px;
+}
+
+/* Líneas divisorias */
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #2980b9;
+    margin: 50px 0;
+}
+
+/* Estilo para los enlaces dentro de las secciones */
+a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3,h2 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
+/* Títulos principales */
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Subtítulos h2 */
+h2 {
+    font-size: 2rem;
+    color: #2980b9;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Subtítulos h3 */
+h3 {
+    font-size: 1.8rem;
+    color: #2980b9;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Párrafos */
+p {
+    font-size: 1.15rem;
+    color: #555;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-left: 5px solid #2980b9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efecto hover en párrafos */
+p:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Listas */
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 1.15rem;
+    color: #333;
+}
+
+/* Resaltar código */
+code {
+    background-color: #f0f0f0;
+    padding: 2px 8px;
+    font-size: 1rem;
+    color: #d9534f;
+    border-radius: 4px;
+}
+
+/* Línea divisoria */
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #2980b9;
+    margin: 30px 0;
+}
+
+/* Estilo para el resumen */
+ul {
+    margin-top: 20px;
+}
+
+/* Estilo para las secciones */
+section {
+    margin-bottom: 30px;
+}
+
+/* Estilo de enlaces */
+a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    code {
+        font-size: 0.9rem;
+    }
+}
+
+form {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    margin-left: 600px;
+}
+
+/* Título */
+h1 {
+    font-size: 2.2rem;
+    color: #4c6ef5;
+    margin-bottom: 30px;
+}
+
+/* Estilo para las etiquetas de los campos */
+label {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+    text-align: center;
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    background-color: #f9f9f9;
+}
+
+/* Foco en los campos de entrada */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus {
+    border-color: #4c6ef5;
+    background-color: #ffffff;
+    outline: none;
+}
+
+/* Estilo para el enlace del botón de registro */
+a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4c6ef5;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 100%;
+    margin-top: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover en el enlace */
+a:hover {
+    background-color: #3b5bbf;
+    transform: translateY(-3px);
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+    form {
+        padding: 25px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"] {
+        font-size: 0.9rem;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+}
+      </style>
+    
+        <table border="1">
+            <thead>
+              <tr>
+                <th>Concepto 1</th>
+                <th>Descripción 1</th>
+                <th>Concepto 2</th>
+                <th>Descripción 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tabla en html</td>
+                <td>Define una tabla.</td>
+                <td>Formulario en html</td>
+                <td>Crea un formulario.</td>
+              </tr>
+              <tr>
+                <td>Etiqueta table</td>
+                <td>Inicia una tabla.</td>
+                <td>Etiqueta form</td>
+                <td>Inicia un formulario.</td>
+              </tr>
+              <tr>
+                <td>Atributos de table</td>
+                <td>Propiedades para personalizar la tabla.</td>
+                <td>Etiqueta input</td>
+                <td>Campo de entrada de datos.</td>
+              </tr>
+              <tr>
+                <td>Etiqueta tr</td>
+                <td>Define una fila en la tabla.</td>
+                <td>Etiqueta label</td>
+                <td>Asocia texto con un control de formulario.</td>
+              </tr>
+              <tr>
+                <td>Atributo tr</td>
+                <td>Atributos como `align` y `valign`.</td>
+                <td>Etiqueta select</td>
+                <td>Lista desplegable en un formulario.</td>
+              </tr>
+              <tr>
+                <td>Etiqueta td y th</td>
+                <td>Definen celdas de datos y encabezados.</td>
+                <td>Etiqueta textarea</td>
+                <td>Campo de texto multilínea.</td>
+              </tr>
+              <tr>
+                <td>Atributos de td y th</td>
+                <td>Atributos como `colspan` y `rowspan`.</td>
+                <td>Etiqueta fieldset, legend</td>
+                <td>Agrupa y titula campos de un formulario.</td>
+              </tr>
+              <tr>
+                <td>Tablas avanzadas</td>
+                <td>Tablas con celdas combinadas o estilos complejos.</td>
+                <td>Etiqueta meter</td>
+                <td>Indica el progreso de una tarea.</td>
+              </tr>
+              <tr>
+                <td>Etiqueta thead</td>
+                <td>Define el encabezado de la tabla.</td>
+                <td>Etiqueta progress</td>
+                <td>Muestra el progreso de una acción.</td>
+              </tr>
+              <tr>
+                <td>Etiqueta tfoot</td>
+                <td>Define el pie de la tabla.</td>
+                <td>Etiqueta datalist</td>
+                <td>Proporciona sugerencias para un campo de entrada.</td>
+              </tr>
+              <tr>
+                <td>Etiqueta tbody</td>
+                <td>Define el cuerpo de la tabla.</td>
+                <td>Etiqueta summary</td>
+                <td>Resumen de un elemento desplegable.</td>
+              </tr>
+            </tbody>
+          </table>
+<hr>
+
+          <h1>Define los elementos que componen la estructuración de una página web:</h1>
+
+          <h3>Contenedor (wrapper)</h3>
+          <p>Es un elemento principal que engloba todos los contenidos de la página, ayudando a organizarlos y darles un límite de ancho.</p>
+      
+          <h3>Cabecera (header)</h3>
+          <p>Es la parte superior de la página web, donde generalmente se encuentran el título, el logotipo y el menú de navegación.</p>
+      
+          <h3>Contenido (content)</h3>
+          <p>Es la sección principal donde se muestra la información o los elementos más importantes de la página web.</p>
+      
+          <h3>Menú (menu)</h3>
+          <p>Es una lista de enlaces o botones que permite a los usuarios navegar por las diferentes secciones del sitio web.</p>
+      
+          <h3>Pie (footer)</h3>
+          <p>Es la parte inferior de la página, donde generalmente se incluyen información adicional como derechos de autor, enlaces a políticas y contacto.</p>
+      
+          <h3>Lateral (sidebar)</h3>
+          <p>Es una sección en un lado de la página (izquierda o derecha) que generalmente contiene información secundaria o enlaces adicionales.</p>
+      
+          <h3>Etiqueta (div)</h3>
+          <p>Es una etiqueta genérica que se utiliza para agrupar y organizar otros elementos dentro del HTML, sin ningún estilo por defecto.</p>
+      <hr>
+
+
+ 
+      <h1>Elementos que componen la estructuración semántica de una página web</h1>
+
+      <section>
+          <h2>1. &lt;!DOCTYPE html&gt;</h2>
+          <p><strong>Función:</strong> Este es el <strong>declarativo del tipo de documento</strong>. Indica al navegador que el contenido de la página está escrito en HTML5, lo que le permite interpretar correctamente el código.</p>
+          <p><strong>Importancia:</strong> Es crucial para asegurar que el navegador renderice la página de acuerdo con los estándares modernos de HTML, evitando errores de interpretación.</p>
+      </section>
+  
+      <section>
+          <h2>2. &lt;html lang="en"&gt;</h2>
+          <p><strong>Función:</strong> El elemento <code>&lt;html&gt;</code> es el contenedor raíz de todo el contenido de la página web. El atributo <code>lang="en"</code> especifica el idioma del contenido, en este caso, inglés. Este atributo es importante tanto para los motores de búsqueda como para los usuarios que utilizan tecnologías de asistencia.</p>
+          <p><strong>Importancia semántica:</strong> El atributo <code>lang</code> es útil para mejorar la accesibilidad, ya que los lectores de pantalla pueden usarlo para leer el contenido en el idioma correcto.</p>
+      </section>
+  
+      <section>
+          <h2>3. &lt;head&gt;</h2>
+          <p><strong>Función:</strong> El elemento <code>&lt;head&gt;</code> contiene metadatos sobre la página web, como la codificación de caracteres, enlaces a hojas de estilo externas (CSS), scripts, y el título de la página.</p>
+          <p><strong>Elementos dentro de &lt;head&gt;:</strong></p>
+          <ul>
+              <li><code>&lt;meta charset="UTF-8"&gt;</code>: Define la codificación de caracteres del documento como <code>UTF-8</code>, que es estándar y permite que el texto en diferentes idiomas se muestre correctamente.</li>
+              <li><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>: Configura la página para ser compatible con dispositivos móviles, ajustando su escala y asegurando una visualización adecuada en pantallas de diferentes tamaños.</li>
+              <li><code>&lt;title&gt;</code>: Define el título de la página, que aparece en la pestaña del navegador y es utilizado por los motores de búsqueda como parte de su indexación.</li>
+          </ul>
+      </section>
+  
+      <section>
+          <h2>4. &lt;body&gt;</h2>
+          <p><strong>Función:</strong> El elemento <code>&lt;body&gt;</code> contiene el contenido visible de la página web, es decir, todo lo que el usuario verá al cargar la página en el navegador.</p>
+          <p><strong>Importancia semántica:</strong> Aunque el <code>&lt;body&gt;</code> en sí mismo no contiene un significado semántico específico, es el contenedor de todo el contenido visible que debe ser estructurado de manera semántica utilizando elementos apropiados como encabezados, párrafos, listas, enlaces, etc.</p>
+      </section>
+  
+      <h2>Resumen de la estructura semántica en el código proporcionado:</h2>
+      <ul>
+          <li><code>&lt;!DOCTYPE html&gt;</code>: Asegura que el navegador interprete correctamente el código HTML.</li>
+          <li><code>&lt;html lang="en"&gt;</code>: Define el idioma del contenido, mejorando la accesibilidad y la indexación de motores de búsqueda.</li>
+          <li><code>&lt;head&gt;</code>: Contiene los metadatos esenciales, como la codificación de caracteres, la configuración para dispositivos móviles, y el título de la página.</li>
+          <li><code>&lt;body&gt;</code>: Es el contenedor principal del contenido visible de la página.</li>
+      </ul>
+  
+      <p>Aunque el código es muy básico y no contiene muchos elementos semánticos adicionales como encabezados (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc.), se establece una estructura fundamental para cualquier página HTML. En una página web más compleja, se agregarían otros elementos semánticos como <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, etc., para proporcionar una mejor organización del contenido y facilitar la comprensión tanto para los usuarios como para los motores de búsqueda.</p>
+<hr>
+
+ <h1>formulario de registro</h1>
+<form action="/registro" method="POST">
+    <!-- Campo para el nombre -->
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <br><br>
+
+    <!-- Campo para el correo electrónico -->
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+    <br><br>
+
+    <!-- Campo para la contraseña -->
+    <label for="contraseña">Contraseña:</label>
+    <input type="password" id="contraseña" name="contraseña" required>
+    <br><br>
+
+    <!-- Campo para confirmar la contraseña -->
+    <label for="confirmar_contraseña">Confirmar Contraseña:</label>
+    <input type="password" id="confirmar_contraseña" name="confirmar_contraseña" required>
+    <br><br>
+
+    <!-- Campo para la fecha de nacimiento -->
+    <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+    <br><br>
+
+    <!-- Usando la etiqueta <a> para enviar el formulario -->
+    <a href="javascript:void(0);" onclick="this.closest('form').submit();">Registrar</a>
+</form>
+
+</body>
+</html>
